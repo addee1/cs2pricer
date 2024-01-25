@@ -1,0 +1,15 @@
+{
+  "name": "steam-inventory-fetcher",
+  "version": "1.0.0",
+  "description": "Retrieves a user's CS2 inventory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Addee (https://steamcommunity.com/id/addees-trades/)",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "express": "^4.18.2"
+  }
+}

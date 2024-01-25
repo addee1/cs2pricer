@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2Pricer | Home</title>
+    <link rel="icon" type="image/favicon" href="Images/cs2pricer-tag.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <script src="https://kit.fontawesome.com/0da086c9c3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="loading-bar-container">
+        <div id="loading-bar"></div>
+    </div>
+    <div class="content-wrapper">
+        <div class="header-top">
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="faq.html">FAQ</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social-media-top">
+                <a href="https://steamcommunity.com/id/addees-trades/" target="_blank"><i class="fa-brands fa-steam-symbol"></i></href><a href="https://discord.com/users/303513385646161924" target="_blank"><i class="fa-brands fa-discord"></i></a><a href="https://twitter.com/ADDEES_TRADES" target="_blank"><i class="fa-brands fa-x-twitter"></i></a><a href="https://www.facebook.com/AddeesTrades" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>  
+            </div>
+        </div>
+        <div class="banner-section">
+            <img src="https://i.imgur.com/mtlqiBT.png" class="banner-image">
+            <div class="banner-text">
+                <h1>CS2 PRICE LIST GENERATOR</h1>
+                <img src="Images/cs2pricer-tag.png" class="logo-image">
+                <h2>Spice up your pricelist now!</h2>
+                
+            </div>
+        </div>
+        <div class="affiliate-section">
+            <div class="affiliate-1">
+                <a href="https://gamerpay.gg/partner/5b814a92f4" target="_blank" class="gamerpay-link"><img class="gamerpay" src="Images/gamerpay-logo.png"></a>
+            </div>
+            <div class="affiliate-2">
+                <a href="https://csmiddler.com/?r=addee" target="_blank" class="csmiddler-link"><img class="csmiddler" src="Images/csmiddler-logo.svg"></a>
+            </div>
+        </div>
+        <div id="category-filters">
+            <input type="text" id="steamIdInput" placeholder="Enter SteamID64">
+            <div class="input-with-icon">
+                <input type="password" id="apiKeyInput" placeholder="Enter API-key">
+                <i class="fa-solid fa-circle-info info-icon"></i>
+                <div class="tooltip">You need to enter your API key<br>to be able to fetch your inventory.<br>We do not store your key.<br>Never share it to anyone!</div>
+            </div>                      
+            <button id="btn-load-inventory">Load Inventory</button>
+            <button id="btn-save-image">Download (coming soon)</button>
+            <h3>Hide Tradelocked Items</h3>
+            <div class="checkbox-wrapper-3">
+                <input type="checkbox" id="cbx-3" />
+                <label for="cbx-3" class="toggle"><span></span></label>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Show Type</button>
+                <div class="dropdown-content">
+                    <label><input type="checkbox" value="CSGO_Type_Knife" class="item-filter"> Knives</label>
+                    <label><input type="checkbox" value="Type_Hands" class="item-filter"> Gloves</label>
+                    <label><input type="checkbox" value="CSGO_Type_Pistol" class="item-filter"> Pistols</label>
+                    <label><input type="checkbox" value="CSGO_Type_Shotgun" class="item-filter"> Shotguns</label>
+                    <label><input type="checkbox" value="CSGO_Type_SMG" class="item-filter"> SMG</label>
+                    <label><input type="checkbox" value="CSGO_Type_Rifle" class="item-filter"> Rifles</label>
+                    <label><input type="checkbox" value="CSGO_Type_SniperRifle" class="item-filter"> Sniper Rifles</label>
+                    <label><input type="checkbox" value="CSGO_Type_Machinegun" class="item-filter"> Machine Guns</label>
+                    <label><input type="checkbox" value="Type_CustomPlayer" class="item-filter"> Agents</label>
+                    <label><input type="checkbox" value="CSGO_Tool_Sticker" class="item-filter"> Stickers</label>
+                    <!-- Lägg till fler kategorier här -->
+                </div>
+            </div>
+            <select id="sort-options">
+                <option value="" disabled selected>Sort by..</option>
+                <option value="highest-price">Highest Price</option>
+                <option value="lowest-price">Lowest Price</option>
+                <option value="name-asc">Name A-Z</option>
+                <option value="name-desc">Name Z-A</option>
+            </select>
+        </div>
+        
+        <div id="inventory-section"></div>
+        <script src="scripts/script.js"></script>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-text">
+            <img src="Images/cs2pricer-text-logo.png">
+            <h1>Developed by <span class="highlight"><a href="https://steamcommunity.com/id/addees-trades/" target="_blank">Addee</a></span></h1>
+            <p>Not associated with Valve Corp</p>
+            
+        </div>
+        <div class="copyright">
+            <p>© 2024 CS2Pricer.com - All Rights Reserved</p>
+            <div class="social-media">
+                <a href="https://steamcommunity.com/id/addees-trades/" target="_blank"><i class="fa-brands fa-steam-symbol"></i></href><a href="https://discord.com/users/303513385646161924" target="_blank"><i class="fa-brands fa-discord"></i></a><a href="https://twitter.com/ADDEES_TRADES" target="_blank"><i class="fa-brands fa-x-twitter"></i></a><a href="https://www.facebook.com/AddeesTrades" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>  
+            </div>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <h1>Menu</h1>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="faq.html" title="Frequently Asked Questions">FAQ</a></li>
+                <li><a href="contact.html" title="Contact Us">Contact</a></li>
+                <li><a href="about.html" title="about">About</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+  

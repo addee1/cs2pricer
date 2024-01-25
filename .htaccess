@@ -1,0 +1,18 @@
+RewriteEngine On
+
+# Omskriv cs2pricer.com/index.html till cs2pricer.com/home
+RewriteRule ^home/?$ index.html [NC,L]
+
+# Omskriv cs2pricer.com/faq.html till cs2pricer.com/faq
+RewriteRule ^faq/?$ faq.html [NC,L]
+
+# Omskriv cs2pricer.com/contact.html till cs2pricer.com/contact
+RewriteRule ^contact/?$ contact.html [NC,L]
+
+# Omskriv cs2pricer.com/about.html till cs2pricer.com/about
+RewriteRule ^about/?$ about.html [NC,L]
+
+# Ta bort .html
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
